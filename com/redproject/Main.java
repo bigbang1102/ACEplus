@@ -124,6 +124,10 @@ public class Main {
                 "<jsp:include page=\"<%=reportTemplatePath2+\"/date-as-of-readonly.jsp?templateCallTime=\"+System.currentTimeMillis()%>\"/>",
                 "<jsp:include page=\"<%=templateDateAsreadonly%>\"/>"
         );
+        strData = strData.replace(
+                "<jsp:include page=\"<%=reportTemplatePath+\"/period-month-year.jsp?templateCallTime=\"+System.currentTimeMillis()%>\"/>",
+                "<jsp:include page=\"<%=templateMaterialRefDatalist%>\"/>"
+        );
 
 
         // <jsp:include page="<%=reportTemplatePath2+"/date-from-to-special.jsp?templateCallTime="+System.currentTimeMillis()%>"/>
