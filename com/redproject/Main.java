@@ -128,6 +128,10 @@ public class Main {
                 "<jsp:include page=\"<%=reportTemplatePath+\"/period-month-year.jsp?templateCallTime=\"+System.currentTimeMillis()%>\"/>",
                 "<jsp:include page=\"<%=templateMaterialRefDatalist%>\"/>"
         );
+         strData = strData.replace(
+                "<jsp:include page=\"<%=reportTemplatePath2+\"/text-from-to.jsp?templateCallTime=\"+System.currentTimeMillis()%>\"/>",
+                "<jsp:include page=\"<%=templateMaterialRefTextfometo%>\"/>"
+        );
 
 
         // <jsp:include page="<%=reportTemplatePath2+"/date-from-to-special.jsp?templateCallTime="+System.currentTimeMillis()%>"/>
