@@ -70,7 +70,7 @@ public class Main {
         );
 
 
-            //************* */ เพิ่มใหม่ ********************************
+            //************* */ เ��ิ��ม��หม�� ********************************
 
         strData = strData.replace(
                 "<jsp:include page=\"<%=reportTemplatePath2+\"/date-from-to-select-field.jsp?templateCallTime=\"+System.currentTimeMillis()%>\"/>",
@@ -92,7 +92,7 @@ public class Main {
                 "<jsp:include page=\"<%=templateDateAsmidie%>\"/>"
         );
 
-          //************* */ เพิ่มใหม่ ********************************
+          //************* */ เ��ิ��ม��หม�� ********************************
            strData = strData.replace(
                 "<jsp:include page=\"<%=reportTemplatePath2+\"/date-from-to-adv.jsp?templateCallTime=\"+System.currentTimeMillis()%>\"/>",
                 "<jsp:include page=\"<%=templateDateAsdatefrom%>\"/>"
@@ -102,7 +102,7 @@ public class Main {
                 "<jsp:include page=\"<%=templateDateAsorderby%>\"/>"
 
         );
-        // ***************************** เพิ่มใหม่ ******************************
+        // ***************************** เ��ิ��ม��หม�� ******************************
             strData = strData.replace(
                 "<jsp:include page=\"<%=reportTemplatePath2+\"/date-from-to-special.jsp?templateCallTime=\"+System.currentTimeMillis()%>\"/>",
                 "<jsp:include page=\"<%=templateDateAsspecial%>\"/>"
@@ -135,6 +135,16 @@ public class Main {
          strData = strData.replace(
                 "<jsp:include page=\"<%=reportTemplatePath+\"/period-year.jsp?templateCallTime=\"+System.currentTimeMillis()%>\"/>",
                 "<jsp:include page=\"<%=templateMaterialRefPeriodyear%>\"/>"
+        );
+
+        strData = strData.replace(
+                "<jsp:include page=\"<%=\"/reporttemplate/filterreport-header.jsp?reportDrilldown=&templateCallTime=\"+System.currentTimeMillis()%>\"/>",
+                "<jsp:include page=\"<%=templateGlAccount%>\"/>"
+        );
+
+         strData = strData.replace(
+                "<jsp:include page=\"<%=reportTemplatePath2+\"/reference-data-no-adv.jsp?templateCallTime=\"+System.currentTimeMillis()%>\"/>",
+                "<jsp:include page=\"<%=templateGlAccount2%>\"/>"
         );
 
 
