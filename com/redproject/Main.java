@@ -44,8 +44,6 @@ public class Main {
                 "<jsp:include page=\"<%=templateReferenceDataNoADV%>\"/>"
         );
 
-
-
         strData = strData.replace(
                 "<jsp:include page=\"<%=reportTemplatePath2+\"/reference-data-adv.jsp?templateCallTime=\"+System.currentTimeMillis()%>\"/>",
                 "<jsp:include page=\"<%=templateReferenceDataADV%>\"/>"
@@ -56,12 +54,10 @@ public class Main {
                 "<jsp:include page=\"<%=templateMaterialRefData2%>\"/>"
         );
 
-
         strData = strData.replace(
                 "<jsp:include page=\"<%=reportTemplatePath+\"/material-ref-data.jsp?templateCallTime=\"+System.currentTimeMillis()%>\"/>",
                 "<jsp:include page=\"<%=templateMaterialRefData%>\"/>"
         );
-
 
 
         strData = strData.replace(
@@ -69,8 +65,6 @@ public class Main {
                 "<jsp:include page=\"<%=templateOrderbyConstantNoADV%>\"/>"
         );
 
-
-            //************* */ เ��ิ��ม��หม�� ********************************
 
         strData = strData.replace(
                 "<jsp:include page=\"<%=reportTemplatePath2+\"/date-from-to-select-field.jsp?templateCallTime=\"+System.currentTimeMillis()%>\"/>",
@@ -82,71 +76,82 @@ public class Main {
                 "<jsp:include page=\"<%=templateDateFromToNVD%>\"/>"
         );
 
-          strData = strData.replace(
+        strData = strData.replace(
                 "<jsp:include page=\"<%=reportTemplatePath2+\"/date-as-of.jsp?templateCallTime=\"+System.currentTimeMillis()%>\"/>",
                 "<jsp:include page=\"<%=templateDateAsOf%>\"/>"
         );
 
-            strData = strData.replace(
+        strData = strData.replace(
                 "<jsp:include page=\"<%=\"/reporttemplate/filterreport-header2.jsp?templateCallTime=\"+System.currentTimeMillis()%>\"/>",
                 "<jsp:include page=\"<%=templateDateAsmidie%>\"/>"
         );
 
-          //************* */ เ��ิ��ม��หม�� ********************************
-           strData = strData.replace(
+        strData = strData.replace(
                 "<jsp:include page=\"<%=reportTemplatePath2+\"/date-from-to-adv.jsp?templateCallTime=\"+System.currentTimeMillis()%>\"/>",
                 "<jsp:include page=\"<%=templateDateAsdatefrom%>\"/>"
         );
-                   strData = strData.replace(
+        strData = strData.replace(
                 "<jsp:include page=\"<%=reportTemplatePath+\"/orderby-constant-no-adv.jsp?templateCallTime=\"+System.currentTimeMillis()%>\"/>",
                 "<jsp:include page=\"<%=templateDateAsorderby%>\"/>"
 
         );
-        // ***************************** เ��ิ��ม��หม�� ******************************
-            strData = strData.replace(
+        strData = strData.replace(
                 "<jsp:include page=\"<%=reportTemplatePath2+\"/date-from-to-special.jsp?templateCallTime=\"+System.currentTimeMillis()%>\"/>",
                 "<jsp:include page=\"<%=templateDateAsspecial%>\"/>"
         );
-            strData = strData.replace(
+        strData = strData.replace(
                 "<jsp:include page=\"<%=reportTemplatePath2+\"/reference-data-one-select.jsp?templateCallTime=\"+System.currentTimeMillis()%>\"/>",
                 "<jsp:include page=\"<%=templateDateAsreferencespecial%>\"/>"
         );
-            strData = strData.replace(
+        strData = strData.replace(
                 "<jsp:include page=\"<%=reportTemplatePath3+\"/reference-data-property.jsp?templateCallTime=\"+System.currentTimeMillis()%>\"/>",
                 "<jsp:include page=\"<%=templateDateAsproperty%>\"/>"
         );      
      
-            strData = strData.replace(
+        strData = strData.replace(
                 "<jsp:include page=\"<%=reportTemplatePath2+\"/date-as-of-readonly.jsp?templateCallTime=\"+System.currentTimeMillis()%>\"/>",
                 "<jsp:include page=\"<%=templateDateAsreadonly%>\"/>"
         );
-            strData = strData.replace(
+
+        strData = strData.replace(
                 "<jsp:include page=\"<%=reportTemplatePath2+\"/date-as-of-readonly.jsp?templateCallTime=\"+System.currentTimeMillis()%>\"/>",
                 "<jsp:include page=\"<%=templateDateAsreadonly%>\"/>"
         );
+
         strData = strData.replace(
                 "<jsp:include page=\"<%=reportTemplatePath+\"/period-month-year.jsp?templateCallTime=\"+System.currentTimeMillis()%>\"/>",
                 "<jsp:include page=\"<%=templateMaterialRefDatalist%>\"/>"
         );
+
          strData = strData.replace(
                 "<jsp:include page=\"<%=reportTemplatePath2+\"/text-from-to.jsp?templateCallTime=\"+System.currentTimeMillis()%>\"/>",
                 "<jsp:include page=\"<%=templateMaterialRefTextfometo%>\"/>"
         );
+
          strData = strData.replace(
                 "<jsp:include page=\"<%=reportTemplatePath+\"/period-year.jsp?templateCallTime=\"+System.currentTimeMillis()%>\"/>",
                 "<jsp:include page=\"<%=templateMaterialRefPeriodyear%>\"/>"
         );
 
         strData = strData.replace(
-                "<jsp:include page=\"<%=\"/reporttemplate/filterreport-header.jsp?reportDrilldown=&templateCallTime=\"+System.currentTimeMillis()%>\"/>",
+                "<jsp:include page=\"<%=reporttemplate\"/filterreport-header.jsp?reportDrilldown=&templateCallTime=\"+System.currentTimeMillis()%>\"/>",
                 "<jsp:include page=\"<%=templateGlAccount%>\"/>"
         );
 
-         strData = strData.replace(
-                "<jsp:include page=\"<%=reportTemplatePath2+\"/reference-data-no-adv.jsp?templateCallTime=\"+System.currentTimeMillis()%>\"/>",
-                "<jsp:include page=\"<%=templateGlAccount2%>\"/>"
+        strData = strData.replace(
+                "<jsp:include page=\"<%=reportTemplatePath+\"/select-output-type.jsp?templateCallTime=\"+System.currentTimeMillis()%>\"/>",
+                "<jsp:include page=\"<%=templateChartAccount%>\"/>"
         );
 
+        strData = strData.replace(
+                "<jsp:include page=\"<%=reportTemplatePath2+\"/report_parameter.jsp\"%>\"/>",
+                "<jsp:include page=\"<%=templateReportParameter%>\"/>"
+        );
+
+        strData = strData.replace(
+                "<jsp:include page=\"<%=reportTemplatePath2+\"/depstatus-constant-no-adv.jsp?templateCallTime=\"+System.currentTimeMillis()%>\"/>",
+                "<jsp:include page=\"<%=templateDepstatusCostant%>\"/>"
+        );
 
         // <jsp:include page="<%=reportTemplatePath2+"/date-from-to-special.jsp?templateCallTime="+System.currentTimeMillis()%>"/>
 
